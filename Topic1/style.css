@@ -1,0 +1,56 @@
+.container {
+  width: 800px;
+  border: 1px solid;
+}
+
+.hid {
+  opacity: 0;
+  text-align: center;
+}
+
+.visible {
+  opacity: 1;
+  text-align: center;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.error {
+  list-style-type: none;
+  font-size: 40px;
+  color: red;
+  opacity: 1;
+  text-align: center;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.list {
+  list-style-type: none;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.tittle {
+  font-weight: bold;
+}
+
+#stable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#stable th,td {
+  border: 1px solid;
+  text-align: left;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
