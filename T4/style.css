@@ -1,0 +1,129 @@
+.container {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 3px black solid;
+}
+
+.area {
+  height: 100px;
+  width: 250px;
+}
+
+::placeholder {
+  color: red;
+}
+
+:focus::placeholder {
+  color: transparent
+}
+
+.button {
+  display: block;
+  margin: auto;
+  width: 25%;
+  height: 25px;
+  font
+}
+
+#box {
+margin: auto;
+text-align: center;
+width: 400px;
+padding: 20px;
+border: 1px solid #999999;
+}
+
+#box >div {
+padding: 5px;
+border-bottom: 1px solid #999999;
+}
+
+#cajaformulario {
+float: left;
+padding: 20px;
+border: 1px solid #999999;
+}
+
+#cajadatos {
+float: left;
+width: 400px;
+margin-left: 20px;
+padding: 20px;
+border: 1px solid #999999;
+}
+
+#clave, #texto {
+width: 200px;
+}
+
+#cajadatos > div {
+padding: 5px;
+border-bottom: 1px solid #999999;
+}
+
+.contpicture {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 3px black solid;
+}
+
+.contpicture > canvas {
+  padding-left: 100px;
+}
+
+.contpicture > svg {
+  padding-left: 100px;
+  fill: #663;
+  stroke: #336;
+  stroke-width: 2;
+}
+
+svg > rect {
+  width: 50%;
+  height: 100px;
+}
+
+.message {
+  color: blue;
+  font-size: 30px;
+}
+
+.error {
+  color: red;
+}
+
+.content {
+  display:block;
+  font-size:25px;
+  color:#FFF;
+  text-align:center;
+}
+
+div[class='contDrag'] {
+  width:50%;
+  height:200px;
+  background:rgba(190,150,127,0.8);
+  border: 3px solid rgba(38,104,127, 1);
+  margin:5px auto;
+  padding:5px;
+}
+
+div[id='boxDrag'] {
+  width:50%;
+  height:auto;
+  background:rgba(90, 0, 0, 0.8);
+  border: 3px solid rgba(204, 0, 0, 1);
+  margin:5px auto;
+  padding:5px;
+  color:#FFF;
+}
+
+div[class ='contDrag'] div[id ='boxDrag'] {
+  width:50%;
+  background:rgba(40,0,0,0.8);
+  border: 1px solid rgba(100,178,255, 1);
+}
