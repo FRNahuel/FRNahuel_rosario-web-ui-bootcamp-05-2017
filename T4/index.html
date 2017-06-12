@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="description" content="Topic 4">
+    <meta name="author" content="Rodrigo Fernandez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="localdb.js"></script>
+    <script src="dragdropdraw.js"></script>
+    <script src="websocket.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Topic 4</h1>
+      <!--<textarea class="area" id="drag" placeholder="Write some text to move"></textarea>-->
+      <textarea class="area" id="value"
+      placeholder="Text to be saved on localstorage/indexedDB or Text to be send via Websocket">
+      </textarea>
+      <button class="button" type="button">Save</button>
+      <button class="button" type="button">Clear</butto n>
+      <button class="button" type="button">Save with IndexedDB</button>
+      <button class="button" type="button">Clear indexedDB</button>
+      <button class="button" type="button">Send to Websocket</button>
+    </div>
+    <section id="box">
+    </section>
+    <section class="contpicture">
+      <h2> Draw </h2>
+      <canvas id="picture" width="500" height="300">
+        Su navegador no soporta el elemento canvas
+      </canvas>
+      <svg width="400" height="180">
+        <rect x="20" y="20"/>
+      </svg>
+    </section>
+    <section>
+      <div id="boxDrag" draggable="true" ondragstart="dragstart(this,event)">
+        <span class="content">Draggable Content</span>
+      </div>
+      <div class="contDrag" ondrop="drop(this,event)"
+      ondragenter="return false" ondragover="return false">
+        <span class="content"> Put the Draggable content here </span>
+      </div>
+    </section>
+  </body>
+</html>
