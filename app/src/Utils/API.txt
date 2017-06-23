@@ -1,0 +1,28 @@
+
+
+realm status WOW/realm/status
+https://us.api.battle.net/wow/realm/status?locale=en_US&apikey=byr2txgarfnwm4627g88wz93vkdk35u8
+
+character
+ wow/char/realm/name
+https://us.api.battle.net/wow/character/Twisting%20Nether/Tegu?locale=en_US&apikey=byr2txgarfnwm4627g88wz93vkdk35u8
+{
+    "lastModified": 1424827467000,
+    "name": "Tegu",
+    "realm": "Twisting Nether",
+    "battlegroup": "Shadowburn",
+    "class": 2,
+    "race": 10,
+    "gender": 0,
+    "level": 29,
+    "achievementPoints": 11060,
+    "thumbnail": "twisting-nether/101/64343909-avatar.jpg",
+    "calcClass": "b",
+    "faction": 1,
+    "totalHonorableKills": 0
+}
+
+
+
+Characters item  wow/char/realm/name/ fields=items
+https://us.api.battle.net/wow/character/Twisting%20Nether/Tegu?fields=items&locale=en_US&apikey=byr2txgarfnwm4627g88wz93vkdk35u8
